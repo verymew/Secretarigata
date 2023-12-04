@@ -15,6 +15,8 @@ public class Usuario implements EntidadeBase {
     private Long id;
     @Column(name = "nome", nullable = false, length = 50)
     private String nome;
+    @Column(name = "sobrenome", nullable = false, length = 100)
+    private String sobrenome;
     @Column(name = "endereco", nullable = false)
     private String endereco;
     @Column(name = "cpf", unique = true, nullable = false)

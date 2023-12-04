@@ -8,17 +8,17 @@
     <persistence-unit name="application" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-        <!-- Specify your entity classes -->
+        <!-- Entidades -->
         <class>com.br.dentuda.models.Usuario</class>
 
         <properties>
-            <!-- Database connection properties -->
+            <!-- Configuração do banco de dados -->
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/secretarigata"/>
             <property name="javax.persistence.jdbc.user" value="postgres"/>
             <property name="javax.persistence.jdbc.password" value="123"/>
 
-            <!-- Hibernate properties -->
+            <!-- Hibernate configurações -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>

@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="453.0" prefWidth="600.0" stylesheets="@../../../../style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.br.secretarigata.view.controller.CriarConsultaController">
    <children>
       <Label layoutX="187.0" layoutY="40.0" text="Nova consulta" textAlignment="CENTER">
@@ -37,17 +36,17 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TextField layoutX="111.0" layoutY="182.0" prefWidth="122.0" />
+      <TextField fx:id="namefield" layoutX="111.0" layoutY="182.0" prefWidth="122.0" />
       <Label layoutX="69.0" layoutY="186.0" text="Nome:" />
-      <TextField layoutX="321.0" layoutY="182.0" prefWidth="238.0" />
+      <TextField fx:id="lastnamefield" layoutX="321.0" layoutY="182.0" prefWidth="238.0" />
       <Label layoutX="250.0" layoutY="186.0" text="Sobrenome:" />
       <Label layoutX="76.0" layoutY="230.0" text="CPF:" />
-      <TextField layoutX="111.0" layoutY="226.0" prefWidth="171.0" />
+      <TextField fx:id="cpfield" layoutX="111.0" layoutY="226.0" prefWidth="171.0" />
       <DatePicker layoutX="114.0" layoutY="328.0" prefHeight="25.0" prefWidth="116.0" />
       <Label layoutX="77.0" layoutY="333.0" text="Dia:" />
       <Label layoutX="295.0" layoutY="230.0" text="Endereço:" />
-      <TextField layoutX="355.0" layoutY="226.0" prefWidth="204.0" />
-      <Button layoutX="255.0" layoutY="390.0" mnemonicParsing="false" text="Criar consulta" />
+      <TextField fx:id="enderecofield" layoutX="355.0" layoutY="226.0" prefWidth="204.0" />
+      <Button fx:id="createbutton" layoutX="255.0" layoutY="390.0" mnemonicParsing="false" onAction="#criarNovaConsulta" text="Criar consulta" />
       <Label layoutX="261.0" layoutY="142.0" text="Identificação" />
       <Label layoutX="272.0" layoutY="288.0" text="Consulta" />
    </children>

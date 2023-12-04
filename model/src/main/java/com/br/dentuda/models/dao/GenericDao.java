@@ -9,6 +9,7 @@ import java.util.List;
 public class GenericDao <T extends EntidadeBase>{
     //método para retornar uma factory criada
     public EntityManager getEm(){
+        //Procura o arquivo de persistencia, onde fica a configuração do banco de dados
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("application");
         return factory.createEntityManager();
     }
