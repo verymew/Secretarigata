@@ -18,8 +18,8 @@
 
         <dependency>
             <groupId>com.br.secretarigata</groupId>
-            <artifactId>model</artifactId>
-            <version>1.0</version>
+            <artifactId>controller</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
