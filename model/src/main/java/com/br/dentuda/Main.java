@@ -1,7 +1,6 @@
 package com.br.dentuda;
 
 import com.br.dentuda.models.Usuario;
-import com.br.dentuda.models.dao.HibernateUtil;
 import com.br.dentuda.models.dao.UsuarioDao;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
@@ -17,8 +16,8 @@ public class Main {
     public static void main(String[] args) throws Exception {
         UsuarioDao dao = new UsuarioDao();
         Usuario novo = new Usuario();
-        novo.setNome("juca");
-        novo.setCpf("03770602080");
+        novo.setNome("mula");
+        novo.setCpf("2554758425");
         novo.setEndereco("bonpland, 1047");
 
         dao.salvar(novo);

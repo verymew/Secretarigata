@@ -7,12 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class VisualizarConsultas extends Application {
-
-    public static void main(String[] args) {
-        launch(args);
-    }
-
+public class CriarConsulta extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(PaginaPrincipal.class.getResource("pagina-criar-consulta.fxml"));
@@ -21,4 +16,8 @@ public class VisualizarConsultas extends Application {
         stage.setScene(scene);
         stage.show();
     }
+    public static void main(String[] args) {
+        launch(args);
+    }
+
 }
