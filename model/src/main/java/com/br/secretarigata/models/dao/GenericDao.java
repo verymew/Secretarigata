@@ -1,8 +1,9 @@
-package com.br.dentuda.models.dao;
+package com.br.secretarigata.models.dao;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
+import jakarta.persistence.TypedQuery;
 
 import java.util.List;
 
@@ -60,4 +61,15 @@ public class GenericDao <T extends EntidadeBase>{
             em.close();
         }
     }
+    public List<T> buscarTodos(Class<T> clazz) {
+        EntityManager em = getEm();
+        try {
+            String jpql = "SELECT t FROM " + clazz.getSimpleName() + " t";
+            TypedQuery<T> query = em.createQuery(jpql, clazz);
+            return query.getResultList();
+        } finally {
+            em.close();
+        }
+    }
 }
+

@@ -1,4 +1,4 @@
-package com.br.dentuda.models.dao;
+package com.br.secretarigata.models.dao;
 
 
 public interface EntidadeBase {

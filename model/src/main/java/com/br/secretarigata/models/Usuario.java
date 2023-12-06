@@ -1,6 +1,6 @@
-package com.br.dentuda.models;
+package com.br.secretarigata.models;
 
-import com.br.dentuda.models.dao.EntidadeBase;
+import com.br.secretarigata.models.dao.EntidadeBase;
 import jakarta.persistence.*;
 import lombok.Data;
 
