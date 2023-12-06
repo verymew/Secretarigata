@@ -20,8 +20,22 @@ public class ConsultaController {
         daousuario = new UsuarioDao();
         daoconsulta = new ConsultasDao();
     }
-    public void criarConsulta(String cpf, Date date){
+    public void criarConsulta(String cpf, Date date) throws Exception {
+        UsuarioDao userdao = new UsuarioDao();
+        ConsultasDao consultasDao = new ConsultasDao();
+
+        Usuario novouser = userdao.
+
         //pesquisar o id a partir do cpf
+        //pegar id
+        Long iduser = userdao.pesquisarCpf(cpf);
+        if(iduser == null){
+            throw new Exception("Id não encontrado.");
+        }
+        //registrar consulta
+        Consultas novaConsulta = new Consultas();
+        novaConsulta.se
+
     }
     public void registrarConsulta(String nome, String sobrenome, String endereco, String cpf) throws Exception {
         validarCampos(nome, sobrenome, endereco, cpf);

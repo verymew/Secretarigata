@@ -9,8 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/ConsultaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/ConsultaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/UsuarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/UsuarioDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/controller/VisualizarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/controller/VisualizarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../view/src/main/resources/com/br/secretarigata/view/visualizar-consultas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/resources/com/br/secretarigata/view/visualizar-consultas.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

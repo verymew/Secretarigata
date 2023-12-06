@@ -7,8 +7,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         UsuarioDao dao = new UsuarioDao();
-        Long teste = dao.pesquisarCpf("0374");
+        Usuario teste = dao.pesquisarCpf("0374");
 
-        System.out.println("Id: " + teste);
+        System.out.println("Id: " + teste.getNome());
     }
 }

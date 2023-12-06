@@ -2,20 +2,24 @@ package com.br.secretarigata.models.dao;
 
 import com.br.secretarigata.models.Usuario;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.NoResultException;
 import jakarta.persistence.TypedQuery;
+import org.hibernate.result.NoMoreReturnsException;
 
 import java.util.List;
 
 public class UsuarioDao extends GenericDao<Usuario> {
-    public Long pesquisarCpf(String cpf){
+    public Usuario pesquisarCpf(String cpf) {
         EntityManager em = getEm();
-        try{
-            String jpql = "SELECT u.id FROM Usuario u WHERE u.cpf = :cpf";
-            TypedQuery<Long> query = em.createQuery(jpql, Long.class);
+        try {
+            String jpql = "SELECT u FROM Usuario u WHERE u.cpf = :cpf";
+            TypedQuery<Usuario> query = em.createQuery(jpql, Usuario.class);
             query.setParameter("cpf", cpf);
             return query.getSingleResult();
-        }catch (Exception e){
-            return null;
+        } catch (NoResultException e) {
+            return null; // Retorna null se nenhum usuário for encontrado
+        } finally {
+            em.close();
         }
     }
 }
