@@ -1,14 +1,12 @@
 package com.br.secretarigata.controllers;
 
 
-import com.br.secretarigata.controllers.error.ErrorHandler;
 import com.br.secretarigata.controllers.error.MensagemErro;
 import com.br.secretarigata.models.Usuario;
 import com.br.secretarigata.models.dao.ConsultasDao;
 import com.br.secretarigata.models.dao.UsuarioDao;
 
 public class ConsultaController {
-    private ErrorHandler handler;
     private UsuarioDao daousuario;
     private ConsultasDao daoconsulta;
     public ConsultaController(){
@@ -29,7 +27,7 @@ public class ConsultaController {
             daousuario.salvar(novoUsuario);
         }catch (Exception e){
             //joga para a view
-            throw new Exception("Não foi possível.");
+            throw new Exception("Não foi possível registrar.");
         }
     }
     public void excluirConsulta(){

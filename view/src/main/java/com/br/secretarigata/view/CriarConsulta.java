@@ -1,6 +1,7 @@
 package com.br.secretarigata.view;
 
 import com.br.secretarigata.view.controller.CriarConsultaController;
+import com.br.secretarigata.view.utils.Utilitarios;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
