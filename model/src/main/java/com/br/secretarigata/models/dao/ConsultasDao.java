@@ -18,7 +18,7 @@ public class ConsultasDao {
         EntityManager em = generic.getEm();
         try {
             //faz a query
-            String jpql = "SELECT u.nome, c.data_consulta FROM Usuario u, Consultas c WHERE u.id = c.user.id";
+            String jpql = "SELECT u.nome, c.data_consulta, u.sobrenome, u.cpf, u.endereco FROM Usuario u, Consultas c WHERE u.id = c.user.id";
             Query query = em.createQuery(jpql);
             List<Object[]> resultado = query.getResultList();
             //insntancia uma arraylist do tipo consultas dto
@@ -28,7 +28,10 @@ public class ConsultasDao {
                 // Certifique-se de que os tipos estão corretos (String e Date)
                 String nome = (String) obj[0];
                 Date data = (Date) obj[1];
-                ConsultasDto dto = new ConsultasDto(nome, data);
+                String sobrenome = (String) obj[2];
+                String cpf = (String) obj[3];
+                String endereco = (String) obj[4];
+                ConsultasDto dto = new ConsultasDto(nome, data, sobrenome, cpf, endereco);
                 todas.add(dto);
             }
 

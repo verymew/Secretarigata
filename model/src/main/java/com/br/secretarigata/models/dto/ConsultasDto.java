@@ -5,13 +5,20 @@ import java.util.Date;
 public class ConsultasDto {
     private String nome;
     private Date data;
-    public String getNome() {
-        return nome;
-    }
+    private String sobrenome;
+    private String cpf;
+    private String endereco;
 
-    public ConsultasDto(String nome, Date data) {
+    public ConsultasDto(String nome, Date data, String sobrenome, String cpf, String endereco) {
         this.nome = nome;
         this.data = data;
+        this.sobrenome = sobrenome;
+        this.cpf = cpf;
+        this.endereco = endereco;
+    }
+
+    public String getNome() {
+        return nome;
     }
 
     public void setNome(String nome) {
@@ -24,5 +31,29 @@ public class ConsultasDto {
 
     public void setData(Date data) {
         this.data = data;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 }

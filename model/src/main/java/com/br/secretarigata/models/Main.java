@@ -16,7 +16,7 @@ public class Main {
         List<ConsultasDto> amadeus = dao.todasconsultas();
 
         for(ConsultasDto consulta : amadeus){
-            System.out.println(consulta.getNome());
+            System.out.println("Nome: " + consulta.getNome() + " CPF: " + consulta.getCpf() + " Data: " + consulta.getData());
         }
     }
 }
