@@ -8,6 +8,7 @@ import com.br.secretarigata.models.Usuario;
 import com.br.secretarigata.models.dao.ConsultasDao;
 import com.br.secretarigata.models.dao.UsuarioDao;
 
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,6 +19,9 @@ public class ConsultaController {
     public ConsultaController(){
         daousuario = new UsuarioDao();
         daoconsulta = new ConsultasDao();
+    }
+    public void criarConsulta(String cpf, Date date){
+        //pesquisar o id a partir do cpf
     }
     public void registrarConsulta(String nome, String sobrenome, String endereco, String cpf) throws Exception {
         validarCampos(nome, sobrenome, endereco, cpf);

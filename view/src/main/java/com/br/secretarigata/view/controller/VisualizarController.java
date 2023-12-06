@@ -62,6 +62,8 @@ public class VisualizarController {
         UsuarioDto puto = consultaslist.getSelectionModel().getSelectedItem();
         Utilitarios utils = new Utilitarios();
         utils.exibirAlerta(puto.getCpf(), Alert.AlertType.CONFIRMATION);
+
+        //abre um controller e envia o cpf e a data para dentro.
     }
 
 }

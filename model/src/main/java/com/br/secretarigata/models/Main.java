@@ -7,10 +7,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         UsuarioDao dao = new UsuarioDao();
-        List<Usuario> todos = dao.buscarTodos(Usuario.class);
+        Long teste = dao.pesquisarCpf("0374");
 
-        for(Usuario usuario : todos){
-            System.out.println(usuario.getNome());
-        }
+        System.out.println("Id: " + teste);
     }
 }
