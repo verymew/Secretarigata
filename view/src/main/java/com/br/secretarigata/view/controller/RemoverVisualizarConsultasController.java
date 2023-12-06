@@ -67,8 +67,9 @@ public class RemoverVisualizarConsultasController {
             controlador.excluirConsulta(cpf);
 
             utils.exibirAlerta("Consulta removida!", Alert.AlertType.CONFIRMATION);
+            listaconsultas.refresh();
         }catch (Exception e){
-            utils.exibirAlerta("Algum erro ocorreu." + e.getMessage(), Alert.AlertType.ERROR);
+            utils.exibirAlerta("Nenhuma consulta encontrada, atualize a pagina.", Alert.AlertType.ERROR);
         }
     }
 }
