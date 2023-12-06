@@ -8,7 +8,7 @@ module view {
     requires org.kordamp.bootstrapfx.core;
 
 
-   requires model;
+   requires controller;
    requires java.sql;
 
     opens com.br.secretarigata.view to javafx.fxml;

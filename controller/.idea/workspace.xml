@@ -5,31 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f822029a-f6c7-4fed-8286-caa67338b264" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/Teste.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/PagamentoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/UsuarioDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto-pai/model/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto-pai/view/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/error/ErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projeto-pai/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/ConsultaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/ConsultaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/error/MensagemErro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/error/MensagemErro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/Consultas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/Consultas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/Pagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/Pagamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/dao/ConsultasDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/ConsultasDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/dao/EntidadeBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/EntidadeBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/dao/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/GenericDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/dao/PagamentoDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/dao/UsuarioDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/ConsultaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/ConsultaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../model/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../view/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../view/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/CriarConsulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/CriarConsulta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/PaginaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/PaginaPrincipal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/controller/CriarConsultaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/controller/CriarConsultaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../view/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/java/module-info.java" afterDir="false" />
     </list>
@@ -41,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="module-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>

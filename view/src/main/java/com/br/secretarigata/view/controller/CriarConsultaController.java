@@ -1,7 +1,6 @@
 package com.br.secretarigata.view.controller;
 
-import com.br.secretarigata.models.Usuario;
-import com.br.secretarigata.models.dao.UsuarioDao;
+import com.br.secretarigata.controllers.ConsultaController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -26,27 +25,16 @@ public class CriarConsultaController {
     private TextField namefield;
     @FXML
     void criarNovaConsulta(ActionEvent event) throws Exception {
-        Usuario novo = new Usuario();
-        novo.setSobrenome("bostil");
-        novo.setNome("Cuzil");
-        novo.setCpf("0374");
-        novo.setEndereco("esgotil");
-
-        UsuarioDao dao = new UsuarioDao();
-
-        dao.salvar(novo);
-
+        ConsultaController controlador = new ConsultaController();
         try{
-
-        }catch (Exception e){
-            Alert alerta = new Alert(Alert.AlertType.INFORMATION);
-            alerta.setTitle("Mensagem de Exemplo" );
+            controlador.registrarConsulta(namefield.getText(), lastnamefield.getText(), enderecofield.getText(), cpfield.getText());
+        }catch(Exception e){
+            Alert alerta = new Alert(Alert.AlertType.ERROR);
+            alerta.setTitle("Alerta");
             alerta.setHeaderText(null);
-            alerta.setContentText(e.toString());
+            alerta.setContentText(e.getMessage());
             alerta.showAndWait();
         }
-
-
     }
 
 }
