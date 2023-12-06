@@ -30,4 +30,22 @@ public class ConsultasDao extends GenericDao<Consultas>{
             em.close();
         }
     }
+    //Retornar um id da consulta, atraves do id_usuario
+    public Long idConsulta(Long id_usuario) {
+        EntityManager em = getEm();
+        try {
+            String jpql = "SELECT c.id FROM Consultas c WHERE c.user.id = :id_usuario";
+            TypedQuery<Long> query = em.createQuery(jpql, Long.class);
+            query.setParameter("id_usuario", id_usuario);
+
+            try {
+                //retornar apenas um resultado
+                return query.getSingleResult();
+            } catch (Exception e) {
+                return null;
+            }
+        } finally {
+            em.close();
+        }
+    }
 }

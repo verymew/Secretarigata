@@ -3,14 +3,11 @@ package com.br.secretarigata.controllers;
 
 import com.br.secretarigata.controllers.dto.ConsultasDTO;
 import com.br.secretarigata.controllers.dto.UsuarioDto;
-import com.br.secretarigata.controllers.error.MensagemErro;
 import com.br.secretarigata.models.Consultas;
 import com.br.secretarigata.models.Usuario;
 import com.br.secretarigata.models.dao.ConsultasDao;
 import com.br.secretarigata.models.dao.UsuarioDao;
 
-import java.sql.Array;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
@@ -71,8 +68,11 @@ public class ConsultaController {
         //receber CPF para retornar um ID
         Usuario user = daousuario.pesquisarCpf(cpf);
 
+        //Com o id, pesquisa nas consultas id_usuario e retorna o id DA CONSULTA
+        Long idconsulta = daoconsulta.idConsulta(user.getId());
+
         //apagar a consulta pelo id
-        daoconsulta.excluir(Consultas.class, user.getId());
+        daoconsulta.excluir(Consultas.class, idconsulta);
     }
     public List<UsuarioDto> visualizarClientes() {
         List<Usuario> listaUsuarios = daousuario.buscarTodos(Usuario.class);

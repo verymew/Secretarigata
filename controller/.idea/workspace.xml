@@ -10,7 +10,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/ConsultaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/ConsultaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/ConsultasDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/ConsultasDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/controller/RemoverVisualizarConsultasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/controller/RemoverVisualizarConsultasController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../view/src/main/resources/com/br/secretarigata/view/remover-visualizar-consultas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/resources/com/br/secretarigata/view/remover-visualizar-consultas.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

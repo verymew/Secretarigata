@@ -65,7 +65,8 @@ public class RemoverVisualizarConsultasController {
             //remove
             String cpf = consultaclicada.getCpf();
             controlador.excluirConsulta(cpf);
-            utils.exibirAlerta(cpf, Alert.AlertType.CONFIRMATION);
+
+            utils.exibirAlerta("Consulta removida!", Alert.AlertType.CONFIRMATION);
         }catch (Exception e){
             utils.exibirAlerta("Algum erro ocorreu." + e.getMessage(), Alert.AlertType.ERROR);
         }
