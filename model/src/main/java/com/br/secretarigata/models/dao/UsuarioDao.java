@@ -17,7 +17,7 @@ public class UsuarioDao extends GenericDao<Usuario> {
             query.setParameter("cpf", cpf);
             return query.getSingleResult();
         } catch (NoResultException e) {
-            return null; // Retorna null se nenhum usuário for encontrado
+            return null;
         } finally {
             em.close();
         }

@@ -24,18 +24,21 @@ public class ConsultaController {
         UsuarioDao userdao = new UsuarioDao();
         ConsultasDao consultasDao = new ConsultasDao();
 
-        Usuario novouser = userdao.
-
-        //pesquisar o id a partir do cpf
-        //pegar id
-        Long iduser = userdao.pesquisarCpf(cpf);
-        if(iduser == null){
-            throw new Exception("Id não encontrado.");
+        try {
+            //pesquisa um usuario através do cpf
+            Usuario novouser = userdao.pesquisarCpf(cpf);
+            if(novouser == null){
+                throw new Exception("CPF não encontrado.");
+            }
+            //registra uma consulta com data e com o usuario como FK
+            Consultas novaconsulta = new Consultas();
+            novaconsulta.setData_consulta(date);
+            novaconsulta.setUser(novouser);
+            //salva no banco
+            consultasDao.salvar(novaconsulta);
+        }catch (Exception e){
+            throw new Exception("A consulta NÃO foi criada.");
         }
-        //registrar consulta
-        Consultas novaConsulta = new Consultas();
-        novaConsulta.se
-
     }
     public void registrarConsulta(String nome, String sobrenome, String endereco, String cpf) throws Exception {
         validarCampos(nome, sobrenome, endereco, cpf);
