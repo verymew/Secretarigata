@@ -1,15 +1,15 @@
-package com.br.secretarigata.models.dto;
+package com.br.secretarigata.controllers.dto;
 
 import java.util.Date;
 
-public class ConsultasDto {
+public class ConsultasDTO {
     private String nome;
     private Date data;
     private String sobrenome;
     private String cpf;
     private String endereco;
 
-    public ConsultasDto(String nome, Date data, String sobrenome, String cpf, String endereco) {
+    public ConsultasDTO(String nome, Date data, String sobrenome, String cpf, String endereco) {
         this.nome = nome;
         this.data = data;
         this.sobrenome = sobrenome;

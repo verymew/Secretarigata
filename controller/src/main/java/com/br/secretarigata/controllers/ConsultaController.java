@@ -1,6 +1,7 @@
 package com.br.secretarigata.controllers;
 
 
+import com.br.secretarigata.controllers.dto.ConsultasDTO;
 import com.br.secretarigata.controllers.dto.UsuarioDto;
 import com.br.secretarigata.controllers.error.MensagemErro;
 import com.br.secretarigata.models.Consultas;
@@ -8,6 +9,7 @@ import com.br.secretarigata.models.Usuario;
 import com.br.secretarigata.models.dao.ConsultasDao;
 import com.br.secretarigata.models.dao.UsuarioDao;
 
+import java.sql.Array;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -67,7 +69,7 @@ public class ConsultaController {
             throw new Exception("Não foi possível registrar.");
         }
     }
-    public void excluirConsulta(){
+    public void excluirConsulta() throws Exception {
 
     }
     public List<UsuarioDto> visualizarClientes() {
@@ -81,6 +83,22 @@ public class ConsultaController {
                         usuario.getEndereco(),
                         usuario.getCpf()))
                 .collect(Collectors.toList());
+    }
+    public List<ConsultasDTO> retornarTodasConsultas() throws Exception {
+        List<Object[]> resultado = daoconsulta.todasconsultas();
+        List<ConsultasDTO> todas = new ArrayList<>();
+        //Converte os objetos
+        for (Object[] obj : resultado) {
+            // Certifique-se de que os tipos estão corretos (String e Date)
+            String nome = (String) obj[0];
+            Date data = (Date) obj[1];
+            String sobrenome = (String) obj[2];
+            String cpf = (String) obj[3];
+            String endereco = (String) obj[4];
+            ConsultasDTO dto = new ConsultasDTO(nome, data, sobrenome, cpf, endereco);
+            todas.add(dto);
+        }
+        return todas;
     }
     private void validarCampos(String nome, String sobrenome, String endereco, String cpf) throws Exception {
         if (nome == null || nome.trim().isEmpty() || sobrenome == null || sobrenome.trim().isEmpty() ||
