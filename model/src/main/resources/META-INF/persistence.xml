@@ -9,7 +9,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <!-- Entidades -->
-        <class>com.br.dentuda.models.Usuario</class>
+        <class>com.br.secretarigata.models.Usuario</class>
 
         <properties>
             <!-- Configuração do banco de dados -->

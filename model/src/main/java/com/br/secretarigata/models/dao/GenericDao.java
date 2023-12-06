@@ -1,10 +1,8 @@
-package com.br.dentuda.models.dao;
+package com.br.secretarigata.models.dao;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-
-import java.util.List;
 
 public class GenericDao <T extends EntidadeBase>{
     //método para retornar uma factory criada

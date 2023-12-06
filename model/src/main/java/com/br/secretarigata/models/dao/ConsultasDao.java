@@ -1,9 +1,6 @@
-package com.br.dentuda.models.dao;
+package com.br.secretarigata.models.dao;
 
-import com.br.dentuda.models.Consultas;
-import jakarta.persistence.EntityManager;
-
-import java.util.List;
+import com.br.secretarigata.models.Consultas;
 
 public class ConsultasDao extends GenericDao<Consultas>{
     private GenericDao emf;

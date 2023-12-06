@@ -17,6 +17,7 @@
             </resource>
         </resources>
         <plugins>
+
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.11.0</version>
@@ -25,13 +26,16 @@
                 </configuration>
             </plugin>
         </plugins>
+
     </build>
 
     <dependencies>
+
+
         <dependency>
-            <groupId>org.hibernate.orm</groupId>
+            <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>6.3.1.Final</version>
+            <version>6.4.0.Final</version>
         </dependency>
 
         <dependency>
@@ -39,11 +43,7 @@
             <artifactId>postgresql</artifactId>
             <version>42.2.2</version>
         </dependency>
-        <dependency>
-            <groupId>org.hibernate.orm</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>6.2.9.Final</version>
-        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

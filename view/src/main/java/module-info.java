@@ -1,4 +1,4 @@
-module com.br.secretarigata.view {
+module view {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -6,6 +6,10 @@ module com.br.secretarigata.view {
     requires com.dlsc.formsfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
+
+
+   requires model;
+   requires java.sql;
 
     opens com.br.secretarigata.view to javafx.fxml;
     exports com.br.secretarigata.view;

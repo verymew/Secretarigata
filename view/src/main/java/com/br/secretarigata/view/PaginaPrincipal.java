@@ -15,6 +15,11 @@ public class PaginaPrincipal extends Application {
         stage.setTitle("Secretarigata");
         stage.setScene(scene);
         stage.show();
+
+
+
+
+
     }
 
     public static void main(String[] args) {

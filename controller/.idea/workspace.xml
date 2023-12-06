@@ -5,12 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f822029a-f6c7-4fed-8286-caa67338b264" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/error/MensagemErro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/Teste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/PagamentoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/UsuarioDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projeto-pai/model/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../projeto-pai/view/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/ConsultaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/ConsultaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/ConsultaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/ConsultaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/error/MensagemErro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/error/MensagemErro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/Consultas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/Consultas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/Pagamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/Pagamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/dao/ConsultasDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/ConsultasDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/dao/EntidadeBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/EntidadeBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/dao/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/GenericDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/dao/PagamentoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/dentuda/models/dao/UsuarioDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../view/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../view/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/CriarConsulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/CriarConsulta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/PaginaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/PaginaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/controller/CriarConsultaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/controller/CriarConsultaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../view/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,31 +42,35 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="module-info" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2Z5pE1xdmccwt9chosSfwLUSvSx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "julia",
-    "ignore.virus.scanning.warn.message": "true",
-    "onboarding.tips.debug.path": "C:/Users/Julie/Desktop/Secretarigata/controller/src/main/java/com/br/secretarigata/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;julia&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Julie/Desktop/Secretarigata/controller/src/main/java/com/br/secretarigata/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

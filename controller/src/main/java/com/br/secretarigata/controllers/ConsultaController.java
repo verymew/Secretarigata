@@ -1,9 +1,10 @@
-package com.br.secretarigata;
+package com.br.secretarigata.controllers;
 
-import com.br.dentuda.models.Usuario;
-import com.br.dentuda.models.dao.ConsultasDao;
-import com.br.dentuda.models.dao.UsuarioDao;
-import com.br.secretarigata.error.MensagemErro;
+
+import com.br.secretarigata.controllers.error.MensagemErro;
+import com.br.secretarigata.models.Usuario;
+import com.br.secretarigata.models.dao.ConsultasDao;
+import com.br.secretarigata.models.dao.UsuarioDao;
 
 public class ConsultaController {
     private UsuarioDao daousuario;
