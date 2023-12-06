@@ -12,10 +12,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         ConsultaController controlador = new ConsultaController();
 
-        List<ConsultasDTO> teste = controlador.retornarTodasConsultas();
-        for(ConsultasDTO consulta : teste){
-            System.out.println(consulta.getNome());
-        }
+        controlador.excluirConsulta("03775447");
 
     }
 }

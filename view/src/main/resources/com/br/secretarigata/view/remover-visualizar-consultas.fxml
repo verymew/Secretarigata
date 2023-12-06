@@ -21,7 +21,7 @@
             <TableColumn fx:id="datacon" minWidth="120.0" prefWidth="75.0" text="Data de consulta" />
         </columns>
       </TableView>
-      <Button fx:id="removerconsulta" layoutX="245.0" layoutY="542.0" mnemonicParsing="false" text="Remover consulta" />
+      <Button fx:id="removerconsulta" layoutX="245.0" layoutY="542.0" mnemonicParsing="false" onAction="#removeconsulta" text="Remover consulta" />
       <MenuBar layoutX="3.0" layoutY="4.0" prefHeight="20.0" prefWidth="595.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">

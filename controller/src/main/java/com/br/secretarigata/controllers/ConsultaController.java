@@ -27,11 +27,9 @@ public class ConsultaController {
         daoconsulta = new ConsultasDao();
     }
     public void criarConsulta(String cpf, String date) throws Exception {
-        UsuarioDao userdao = new UsuarioDao();
-        ConsultasDao consultasDao = new ConsultasDao();
         try {
             //pesquisa um usuario através do cpf
-            Usuario novouser = userdao.pesquisarCpf(cpf);
+            Usuario novouser = daousuario.pesquisarCpf(cpf);
             if(novouser == null){
                 throw new Exception("CPF não encontrado.");
             }
@@ -46,7 +44,7 @@ public class ConsultaController {
             novaconsulta.setUser(novouser);
 
             //salva no banco
-            consultasDao.salvar(novaconsulta);
+            daoconsulta.salvar(novaconsulta);
         }catch (Exception e){
             throw new Exception("A consulta NÃO foi criada." + e.getMessage());
         }
@@ -69,12 +67,15 @@ public class ConsultaController {
             throw new Exception("Não foi possível registrar.");
         }
     }
-    public void excluirConsulta() throws Exception {
+    public void excluirConsulta(String cpf) throws Exception {
+        //receber CPF para retornar um ID
+        Usuario user = daousuario.pesquisarCpf(cpf);
 
+        //apagar a consulta pelo id
+        daoconsulta.excluir(Consultas.class, user.getId());
     }
     public List<UsuarioDto> visualizarClientes() {
-        UsuarioDao dao = new UsuarioDao();
-        List<Usuario> listaUsuarios = dao.buscarTodos(Usuario.class);
+        List<Usuario> listaUsuarios = daousuario.buscarTodos(Usuario.class);
         return listaUsuarios.stream()
                 .map(usuario -> new UsuarioDto(
                         usuario.getId(),

@@ -12,6 +12,7 @@ import java.util.List;
 
 
 public class ConsultasDao extends GenericDao<Consultas>{
+
     public List<Object[]> todasconsultas() throws Exception {
         GenericDao generic = new GenericDao();
         EntityManager em = generic.getEm();
