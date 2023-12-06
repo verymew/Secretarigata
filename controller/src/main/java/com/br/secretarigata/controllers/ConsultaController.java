@@ -8,8 +8,12 @@ import com.br.secretarigata.models.Usuario;
 import com.br.secretarigata.models.dao.ConsultasDao;
 import com.br.secretarigata.models.dao.UsuarioDao;
 
-import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -20,24 +24,29 @@ public class ConsultaController {
         daousuario = new UsuarioDao();
         daoconsulta = new ConsultasDao();
     }
-    public void criarConsulta(String cpf, Date date) throws Exception {
+    public void criarConsulta(String cpf, String date) throws Exception {
         UsuarioDao userdao = new UsuarioDao();
         ConsultasDao consultasDao = new ConsultasDao();
-
         try {
             //pesquisa um usuario através do cpf
             Usuario novouser = userdao.pesquisarCpf(cpf);
             if(novouser == null){
                 throw new Exception("CPF não encontrado.");
             }
-            //registra uma consulta com data e com o usuario como FK
             Consultas novaconsulta = new Consultas();
-            novaconsulta.setData_consulta(date);
+            // Ajustando o formato da data para "yyyy-MM-dd"
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+            LocalDate localDate = LocalDate.parse(date);
+            Date data = Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
+
+            //salavndo na instancia
+            novaconsulta.setData_consulta(data);
             novaconsulta.setUser(novouser);
+
             //salva no banco
             consultasDao.salvar(novaconsulta);
         }catch (Exception e){
-            throw new Exception("A consulta NÃO foi criada.");
+            throw new Exception("A consulta NÃO foi criada." + e.getMessage());
         }
     }
     public void registrarConsulta(String nome, String sobrenome, String endereco, String cpf) throws Exception {
