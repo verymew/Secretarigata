@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="577.0" prefWidth="684.0" stylesheets="@../../../../style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.br.secretarigata.view.controller.VisualizarController">
+   <children>
+      <TableView fx:id="consultaslist" layoutX="83.0" layoutY="155.0" prefHeight="351.0" prefWidth="519.0">
+        <columns>
+          <TableColumn fx:id="name" minWidth="100.0" prefWidth="75.0" text="Nome" />
+            <TableColumn fx:id="lastname" minWidth="100.0" prefWidth="75.0" text="Sobrenome" />
+            <TableColumn fx:id="cpf" minWidth="100.0" prefWidth="75.0" text="CPF" />
+            <TableColumn fx:id="address" minWidth="100.0" prefWidth="75.0" text="Endereço" />
+            <TableColumn fx:id="dateof" minWidth="150.0" prefWidth="75.0" text="Data da consulta" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

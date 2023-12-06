@@ -1,10 +1,16 @@
 package com.br.secretarigata.controllers;
 
 
+import com.br.secretarigata.controllers.dto.UsuarioDto;
 import com.br.secretarigata.controllers.error.MensagemErro;
+import com.br.secretarigata.models.Consultas;
 import com.br.secretarigata.models.Usuario;
 import com.br.secretarigata.models.dao.ConsultasDao;
 import com.br.secretarigata.models.dao.UsuarioDao;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class ConsultaController {
     private UsuarioDao daousuario;
@@ -16,6 +22,7 @@ public class ConsultaController {
     public void registrarConsulta(String nome, String sobrenome, String endereco, String cpf) throws Exception {
         validarCampos(nome, sobrenome, endereco, cpf);
 
+        //criar cliente
         Usuario novoUsuario = new Usuario();
         novoUsuario.setNome(nome);
         novoUsuario.setSobrenome(sobrenome);
@@ -33,8 +40,17 @@ public class ConsultaController {
     public void excluirConsulta(){
 
     }
-    public void visualizarConsultas(){
-
+    public List<UsuarioDto> visualizarClientes() {
+        UsuarioDao dao = new UsuarioDao();
+        List<Usuario> listaUsuarios = dao.buscarTodos(Usuario.class);
+        return listaUsuarios.stream()
+                .map(usuario -> new UsuarioDto(
+                        usuario.getId(),
+                        usuario.getNome(),
+                        usuario.getSobrenome(),
+                        usuario.getEndereco(),
+                        usuario.getCpf()))
+                .collect(Collectors.toList());
     }
     private void validarCampos(String nome, String sobrenome, String endereco, String cpf) throws Exception {
         if (nome == null || nome.trim().isEmpty() || sobrenome == null || sobrenome.trim().isEmpty() ||

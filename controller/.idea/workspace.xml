@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f822029a-f6c7-4fed-8286-caa67338b264" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/utils/Utilitarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/dto/UsuarioDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/CadastrarCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/controller/VisualizarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../view/src/main/resources/com/br/secretarigata/view/registrar-consulta.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../view/src/main/resources/com/br/secretarigata/view/visualizar-consultas.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/ConsultaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/ConsultaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/br/secretarigata/controllers/error/ErrorHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/CriarConsulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/CriarConsulta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/PaginaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/PaginaPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/controller/CriarConsultaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/controller/CriarConsultaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/Pagamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/GenericDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/PagamentoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/UsuarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../model/src/main/java/com/br/secretarigata/models/dao/UsuarioDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../view/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../view/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../view/src/main/java/com/br/secretarigata/view/controller/VisualizarConsultasController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../view/src/main/resources/com/br/secretarigata/view/pagina-criar-consulta.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../view/src/main/resources/com/br/secretarigata/view/pagina-criar-consulta.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
