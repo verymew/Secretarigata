@@ -58,15 +58,11 @@ public class VisualizarController {
             //resgata valores
             UsuarioDto puto = consultaslist.getSelectionModel().getSelectedItem();
             String data = dataexata.getValue().toString();
-
             controlador.criarConsulta(puto.getCpf(), data);
-
-
+            utils.exibirAlerta("Consulta marcada!", Alert.AlertType.CONFIRMATION);
         }catch (Exception e){
             utils.exibirAlerta(e.getMessage(), Alert.AlertType.ERROR);
         }
-
-        //abre um controller e envia o cpf e a data para dentro.
     }
 
 }
