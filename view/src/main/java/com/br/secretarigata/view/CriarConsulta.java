@@ -12,7 +12,7 @@ import java.io.IOException;
 public class CriarConsulta extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(PaginaPrincipal.class.getResource("pagina-criar-consulta.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(PaginaPrincipal.class.getResource("visualizar-consultas.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 453);
         stage.setTitle("Criar consulta");
         stage.setScene(scene);
