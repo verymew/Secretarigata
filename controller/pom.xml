@@ -28,6 +28,7 @@
     </build>
 
     <dependencies>
+
         <dependency>
             <groupId>com.br.secretarigata</groupId>
             <artifactId>model</artifactId>
