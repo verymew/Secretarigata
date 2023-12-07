@@ -1,35 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<VBox alignment="CENTER" prefHeight="640.0" prefWidth="672.0" spacing="20.0" stylesheets="@../../../../style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.br.secretarigata.view.controller.PaginaPrincipalController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
-   <ImageView fitHeight="318.0" fitWidth="355.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../../../../catlogo.png" />
-      </image>
-   </ImageView>
-   <Button fx:id="cadastrarcliente" mnemonicParsing="false" onAction="#abrircliente" scaleX="2.0" scaleY="2.0" text="Cadastrar cliente">
-      <VBox.margin>
-         <Insets bottom="20.0" />
-      </VBox.margin>
-   </Button>
-   <Button fx:id="marcarconsulta" mnemonicParsing="false" scaleX="2.0" scaleY="2.0" text="Marcar consulta">
-      <VBox.margin>
-         <Insets bottom="20.0" />
-      </VBox.margin>
-   </Button>
-    <Button fx:id="visualizarconsulta" onAction="#onHelloButtonClick" scaleX="2.0" scaleY="2.0" text="Visualizar/Remover consultas">
-      <VBox.margin>
-         <Insets bottom="20.0" />
-      </VBox.margin></Button>
-
-    <Label fx:id="welcomeText" />
-</VBox>
+<AnchorPane prefHeight="549.0" prefWidth="522.0" stylesheets="@../../../../style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.br.secretarigata.view.controller.PaginaPrincipalController">
+   <children>
+      <Button fx:id="cadastrarcliente" layoutX="171.0" layoutY="379.0" minHeight="200.0" minWidth="200.0" mnemonicParsing="false" onAction="#mudarparacliente" text="Cadastrar cliente" />
+      <Button fx:id="marcarconsulta" layoutX="170.0" layoutY="417.0" minHeight="-Infinity" minWidth="200.0" mnemonicParsing="false" onAction="#marcaconsultas" prefHeight="48.0" prefWidth="200.0" text="Marcar consulta" />
+      <Button fx:id="visualizarconsulta" layoutX="170.0" layoutY="452.0" minWidth="200.0" onAction="#visualizaremover" text="Visualizar/Remover consultas" />
+      <Label fx:id="welcomeText" layoutX="10.0" layoutY="10.0" />
+      <ImageView fitHeight="318.0" fitWidth="355.0" layoutX="111.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../catlogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
