@@ -61,7 +61,7 @@ public class ConsultaController {
             daousuario.salvar(novoUsuario);
         }catch (Exception e){
             //joga para a view
-            throw new Exception("Não foi possível registrar.");
+            throw new Exception("Não foi possível registrar." + e.getMessage());
         }
     }
     public void excluirConsulta(String cpf) throws Exception {
