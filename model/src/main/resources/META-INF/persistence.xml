@@ -10,6 +10,7 @@
 
         <!-- Entidades -->
         <class>com.br.secretarigata.models.Usuario</class>
+        <class>com.br.secretarigata.models.Consultas</class>
 
         <properties>
             <!-- Configuração do banco de dados -->
